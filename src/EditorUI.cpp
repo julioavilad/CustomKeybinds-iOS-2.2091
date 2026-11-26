@@ -280,9 +280,11 @@ struct $modify(EditorUI) {
     bool isTopLevel() {
         if (CCIMEDispatcher::sharedDispatcher()->hasDelegate()) return false;
 
-        if (auto handler = static_cast<CCKeyboardHandler*>(CCKeyboardDispatcher::get()->m_pDelegates->lastObject())) {
-            // fix the pointer for comparison
-            return static_cast<CCKeyboardDelegate*>(this) == handler->m_pDelegate;
+        auto handlers = CCKeyboardDispatcher::get()->m_pHandlers;
+        if (handlers) {
+            if (auto handler = typeinfo_cast<CCKeyboardHandler*>(handlers->lastObject())) {
+                return static_cast<CCKeyboardDelegate*>(this) == handler->getDelegate();
+            }
         }
 
         return true;
