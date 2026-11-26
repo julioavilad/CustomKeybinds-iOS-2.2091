@@ -9,10 +9,10 @@
 	"version": "v2.3.0",
 	"id": "geode.custom-keybinds",
 	"name": "Custom Keybinds",
-	"developer": "Geode Team",
-	"description": "Custom vanilla keybind support for Geode",
+	"developer": "Geode Team, coniac",
+	"description": "Custom vanilla keybind support for Geode. updated by coniac",
 	"links": {
-		"source": "https://github.com/geode-sdk/CustomKeybinds"
+		"source": "https://github.com/julioavilad/CustomKeybinds-iOS-2.2091"
 	},
 	"settings": {
 		"gameplay-title": {
