@@ -193,7 +193,7 @@ struct $modify(UILayer) {
                 }
 
                 auto handler = static_cast<CCKeyboardHandler*>(handlers->lastObject());
-                if (!handler || handler->getDelegate() != this) {
+                if (!handler || handler->getDelegate() != static_cast<CCKeyboardDelegate*>(static_cast<CCLayer*>(this))) {
                     return ListenerResult::Propagate;
                 }
 
