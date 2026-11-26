@@ -261,7 +261,9 @@ struct $modify(UILayer) {
                     return ListenerResult::Propagate;
                 }
                 if (down) {
-                    if (auto checkpoint = PlayLayer::get()->getLastCheckpoint()) {
+                    auto checkpoints = PlayLayer::get()->m_checkpointArray;
+                    if (checkpoints && checkpoints->count() > 0) {
+                        auto checkpoint = static_cast<CheckpointObject*>(checkpoints->lastObject());
                         PlayLayer::get()->removeCheckpoint(checkpoint);
                     }
                 }
