@@ -217,7 +217,7 @@ struct $modify(UILayer) {
                     return ListenerResult::Stop;
                 }*/
 
-                GJBaseGameLayer::get()->queueButton(1, down, false, timestamp);
+                PlayLayer::get()->queueButton(static_cast<int>(PlayerButton::Jump), down, false, timestamp);
                 if (down) {
                     m_p1Jumping = true;
                 } else {
@@ -251,14 +251,20 @@ struct $modify(UILayer) {
                 if (repeat || this->isPaused()) {
                     return ListenerResult::Propagate;
                 }
-                this->pressKeyFallthrough(KEY_Z, down, timestamp);
+                if (down) {
+                    PlayLayer::get()->createCheckpoint();
+                }
                 return ListenerResult::Stop;
             });
             this->defineKeybind("delete-checkpoint", [this](bool down, bool repeat, double timestamp) {
                 if (repeat || this->isPaused()) {
                     return ListenerResult::Propagate;
                 }
-                this->pressKeyFallthrough(KEY_X, down, timestamp);
+                if (down) {
+                    if (auto checkpoint = PlayLayer::get()->getLastCheckpoint()) {
+                        PlayLayer::get()->removeCheckpoint(checkpoint);
+                    }
+                }
                 return ListenerResult::Stop;
             });
             this->defineKeybind("pause-level", [this](bool down, bool repeat, double timestamp) {
@@ -272,7 +278,9 @@ struct $modify(UILayer) {
                 if (repeat || this->isPaused() || !this->isCurrentPlayLayer()) {
                     return ListenerResult::Propagate;
                 }
-                this->pressKeyFallthrough(KEY_R, down, false, false, false, false, timestamp);
+                if (down) {
+                    PlayLayer::get()->resetLevel();
+                }
                 return ListenerResult::Stop;
             });
             this->defineKeybind("full-restart-level", [this](bool down, bool repeat, double timestamp) {
@@ -286,34 +294,34 @@ struct $modify(UILayer) {
                 if (repeat || this->isPaused()) {
                     return ListenerResult::Propagate;
                 }
-                this->pressKeyFallthrough(KEY_A, down, timestamp);
+                PlayLayer::get()->queueButton(static_cast<int>(PlayerButton::Left), down, false, timestamp);
                 return ListenerResult::Stop;
             });
             this->defineKeybind("move-right-p1", [this](bool down, bool repeat, double timestamp) {
                 if (repeat || this->isPaused()) {
                     return ListenerResult::Propagate;
                 }
-                this->pressKeyFallthrough(KEY_D, down, timestamp);
+                PlayLayer::get()->queueButton(static_cast<int>(PlayerButton::Right), down, false, timestamp);
                 return ListenerResult::Stop;
             });
             this->defineKeybind("move-left-p2", [this](bool down, bool repeat, double timestamp) {
                 if (repeat || this->isPaused()) {
                     return ListenerResult::Propagate;
                 }
-                this->pressKeyFallthrough(KEY_Left, down, timestamp);
+                PlayLayer::get()->queueButton(static_cast<int>(PlayerButton::Left), down, true, timestamp);
                 return ListenerResult::Stop;
             });
             this->defineKeybind("move-right-p2", [this](bool down, bool repeat, double timestamp) {
                 if (repeat || this->isPaused()) {
                     return ListenerResult::Propagate;
                 }
-                this->pressKeyFallthrough(KEY_Right, down, timestamp);
+                PlayLayer::get()->queueButton(static_cast<int>(PlayerButton::Right), down, true, timestamp);
                 return ListenerResult::Stop;
             });
             this->defineKeybind("toggle-hitboxes", [this](bool down, bool repeat, double timestamp) {
                 if (!repeat && down && this->isCurrentPlayLayer() && !this->isPaused()) {
-                    // This assumes you have quick keys on
-                    this->pressKeyFallthrough(KEY_P, down, timestamp);
+                    auto gameManager = GameManager::sharedState();
+                    gameManager->setGameVariable("0166", !gameManager->getGameVariable("0166"));
                     return ListenerResult::Stop;
                 }
                 return ListenerResult::Propagate;
