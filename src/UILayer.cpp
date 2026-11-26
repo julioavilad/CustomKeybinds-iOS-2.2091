@@ -251,8 +251,8 @@ struct $modify(UILayer) {
                 if (repeat || this->isPaused()) {
                     return ListenerResult::Propagate;
                 }
-                if (down) {
-                    PlayLayer::get()->createCheckpoint();
+                if (down && PlayLayer::get()->m_isPracticeMode) {
+                    PlayLayer::get()->markCheckpoint();
                 }
                 return ListenerResult::Stop;
             });
@@ -260,12 +260,9 @@ struct $modify(UILayer) {
                 if (repeat || this->isPaused()) {
                     return ListenerResult::Propagate;
                 }
-                if (down) {
-                    auto checkpoints = PlayLayer::get()->m_checkpointArray;
-                    if (checkpoints && checkpoints->count() > 0) {
-                        auto checkpoint = static_cast<CheckpointObject*>(checkpoints->lastObject());
-                        PlayLayer::get()->removeCheckpoint(checkpoint);
-                    }
+                if (down && PlayLayer::get()->m_isPracticeMode) {
+                    // false removes the newest checkpoint in Geometry Dash 2.2091.
+                    PlayLayer::get()->removeCheckpoint(false);
                 }
                 return ListenerResult::Stop;
             });
