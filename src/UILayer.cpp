@@ -235,7 +235,7 @@ struct $modify(UILayer) {
                     return ListenerResult::Stop;
                 }*/
 
-                GJBaseGameLayer::get()->queueButton(1, down, true, timestamp);
+                PlayLayer::get()->queueButton(static_cast<int>(PlayerButton::Jump), down, true, timestamp);
                 if (down) {
                     m_p2Jumping = true;
                 } else {
