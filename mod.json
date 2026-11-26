@@ -25,7 +25,6 @@
 			"description": "Player 1 Jump",
 			"type": "keybind",
 			"category": "gameplay",
-			"migrate-from": "robtop.geometry-dash/jump-p1",
 			"default": [
 				"Space",
 				"W"
@@ -37,7 +36,6 @@
 			"description": "Player 2 Jump",
 			"type": "keybind",
 			"category": "gameplay",
-			"migrate-from": "robtop.geometry-dash/jump-p2",
 			"default": [
 				"Up"
 			],
@@ -48,7 +46,6 @@
 			"description": "Player 1 move left",
 			"type": "keybind",
 			"category": "gameplay",
-			"migrate-from": "robtop.geometry-dash/move-left-p1",
 			"default": [
 				"A"
 			],
@@ -59,7 +56,6 @@
 			"description": "Player 1 move right",
 			"type": "keybind",
 			"category": "gameplay",
-			"migrate-from": "robtop.geometry-dash/move-right-p1",
 			"default": [
 				"D"
 			],
@@ -70,7 +66,6 @@
 			"description": "Player 2 move left",
 			"type": "keybind",
 			"category": "gameplay",
-			"migrate-from": "robtop.geometry-dash/move-left-p2",
 			"default": [
 				"Left"
 			],
@@ -81,7 +76,6 @@
 			"description": "Player 2 move right",
 			"type": "keybind",
 			"category": "gameplay",
-			"migrate-from": "robtop.geometry-dash/move-right-p2",
 			"default": [
 				"Right"
 			],
@@ -92,7 +86,6 @@
 			"description": "Place a Checkpoint in Practice Mode",
 			"type": "keybind",
 			"category": "gameplay",
-			"migrate-from": "robtop.geometry-dash/place-checkpoint",
 			"default": [
 				"Z"
 			]
@@ -102,7 +95,6 @@
 			"description": "Delete a Checkpoint in Practice Mode",
 			"type": "keybind",
 			"category": "gameplay",
-			"migrate-from": "robtop.geometry-dash/delete-checkpoint",
 			"default": [
 				"X"
 			]
@@ -112,7 +104,6 @@
 			"description": "Pause the Level",
 			"type": "keybind",
 			"category": "gameplay",
-			"migrate-from": "robtop.geometry-dash/pause-level",
 			"default": []
 		},
 		"toggle-hitboxes": {
@@ -120,7 +111,6 @@
 			"description": "Toggles hitboxes while in practice mode",
 			"type": "keybind",
 			"category": "gameplay",
-			"migrate-from": "robtop.geometry-dash/toggle-hitboxes",
 			"default": "P"
 		},
 		"restart-level": {
@@ -128,7 +118,6 @@
 			"description": "Restarts the Level (needs Quick Keys enabled)",
 			"type": "keybind",
 			"category": "gameplay",
-			"migrate-from": "robtop.geometry-dash/restart-level",
 			"default": "R"
 		},
 		"full-restart-level": {
@@ -136,7 +125,6 @@
 			"description": "Restarts the level from the beginning (needs Quick Keys enabled)",
 			"type": "keybind",
 			"category": "gameplay",
-			"migrate-from": "robtop.geometry-dash/full-restart-level",
 			"default": {
 				"win": "Ctrl+R",
 				"android": "Ctrl+R",
@@ -155,7 +143,6 @@
 			"description": "Toggles Practice Mode",
 			"type": "keybind",
 			"category": "gameplay",
-			"migrate-from": "robtop.geometry-dash/practice-level",
 			"default": []
 		},
 		"unpause-level": {
@@ -163,7 +150,6 @@
 			"description": "Unpause the Level",
 			"type": "keybind",
 			"category": "gameplay",
-			"migrate-from": "robtop.geometry-dash/unpause-level",
 			"default": [
 				"Space"
 			]
@@ -173,7 +159,6 @@
 			"description": "Exit the Level",
 			"type": "keybind",
 			"category": "gameplay",
-			"migrate-from": "robtop.geometry-dash/exit-level",
 			"default": []
 		},
 		"editor-title": {
@@ -186,7 +171,6 @@
 			"description": "Toggle the Build Tab",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/build-mode",
 			"default": "One"
 		},
 		"edit-mode": {
@@ -194,7 +178,6 @@
 			"description": "Toggle the Edit Tab",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/edit-mode",
 			"default": "Two"
 		},
 		"delete-mode": {
@@ -202,7 +185,6 @@
 			"description": "Toggle the Delete Tab",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/delete-mode",
 			"default": "Three"
 		},
 		"rotate-ccw": {
@@ -210,7 +192,6 @@
 			"description": "Rotate Object(s) Counter-Clockwise",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/rotate-ccw",
 			"default": "Q"
 		},
 		"rotate-cw": {
@@ -218,7 +199,6 @@
 			"description": "Rotate Object(s) Clockwise",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/rotate-cw",
 			"default": "E"
 		},
 		"flip-x": {
@@ -226,7 +206,6 @@
 			"description": "Flip Object(s) Along the X-Axis",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/flip-x",
 			"default": "Alt+Q"
 		},
 		"flip-y": {
@@ -234,7 +213,6 @@
 			"description": "Flip Object(s) Along the Y-Axis",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/flip-y",
 			"default": "Alt+E"
 		},
 		"delete": {
@@ -242,7 +220,6 @@
 			"description": "Delete Selected Object(s)",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/delete",
 			"default": [
 				"Delete",
 				"Backspace"
@@ -253,7 +230,6 @@
 			"description": "Undo Last Action",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/undo",
 			"default": {
 				"win": "Ctrl+Z",
 				"android": "Ctrl+Z",
@@ -272,7 +248,6 @@
 			"description": "Redo Last Action",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/redo",
 			"default": {
 				"win": "Ctrl+Shift+Z",
 				"android": "Ctrl+Shift+Z",
@@ -291,7 +266,6 @@
 			"description": "Deselect All Objects",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/deselect-all",
 			"default": "Alt+D"
 		},
 		"copy": {
@@ -299,7 +273,6 @@
 			"description": "Copy Selected Objects",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/copy",
 			"default": {
 				"win": "Ctrl+C",
 				"android": "Ctrl+C",
@@ -318,7 +291,6 @@
 			"description": "Paste Selected Objects",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/paste",
 			"default": {
 				"win": "Ctrl+V",
 				"android": "Ctrl+V",
@@ -337,7 +309,6 @@
 			"description": "Duplicate Selected Objects",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/copy-paste",
 			"default": {
 				"win": "Ctrl+D",
 				"android": "Ctrl+D",
@@ -356,7 +327,6 @@
 			"description": "Toggle Rotate Control",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/toggle-rotate",
 			"default": "R"
 		},
 		"toggle-transform": {
@@ -364,7 +334,6 @@
 			"description": "Toggle Transform Control",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/toggle-transform",
 			"default": {
 				"win": "Ctrl+T",
 				"android": "Ctrl+T",
@@ -383,7 +352,6 @@
 			"description": "Toggle Free Move",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/toggle-free-move",
 			"default": "F"
 		},
 		"toggle-swipe": {
@@ -391,7 +359,6 @@
 			"description": "Toggle Swipe",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/toggle-swipe",
 			"default": "T"
 		},
 		"toggle-snap": {
@@ -399,7 +366,6 @@
 			"description": "Toggle Snap",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/toggle-snap",
 			"default": "G"
 		},
 		"playtest": {
@@ -407,7 +373,6 @@
 			"description": "Start / Stop Playtesting",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/playtest",
 			"default": [
 				"Enter"
 			]
@@ -417,7 +382,6 @@
 			"description": "Start / Stop Playing the Level's Music",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/playback-music",
 			"default": {
 				"win": "Ctrl+Enter",
 				"android": "Ctrl+Enter",
@@ -436,7 +400,6 @@
 			"description": "",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/prev-build-tab",
 			"default": []
 		},
 		"next-build-tab": {
@@ -444,7 +407,6 @@
 			"description": "",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/next-build-tab",
 			"default": []
 		},
 		"next-layer": {
@@ -452,7 +414,6 @@
 			"description": "Go to Next Editor Layer",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/next-layer",
 			"default": "Right"
 		},
 		"prev-layer": {
@@ -460,35 +421,30 @@
 			"description": "Go to Previous Editor Layer",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/prev-layer",
 			"default": "Left"
 		},
 		"scroll-up": {
 			"name": "Scroll Up",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/scroll-up",
 			"default": "OEMPlus"
 		},
 		"scroll-down": {
 			"name": "Scroll Down",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/scroll-down",
 			"default": "OEMMinus"
 		},
 		"zoom-in": {
 			"name": "Zoom In",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/zoom-in",
 			"default": "Shift+OEMPlus"
 		},
 		"zoom-out": {
 			"name": "Zoom Out",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/zoom-out",
 			"default": "Shift+OEMMinus"
 		},
 		"lock-preview": {
@@ -496,7 +452,6 @@
 			"description": "Locks the editor preview line at the center of the camera",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/lock-preview",
 			"default": "F1"
 		},
 		"unlock-preview": {
@@ -504,7 +459,6 @@
 			"description": "Unlocks the editor preview line",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/unlock-preview",
 			"default": "F2"
 		},
 		"toggle-preview-mode": {
@@ -512,7 +466,6 @@
 			"description": "Toggles preview mode ON/OFF",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/toggle-preview-mode",
 			"default": "F3"
 		},
 		"toggle-particle-icons": {
@@ -520,7 +473,6 @@
 			"description": "Toggles between showing particles or showing their icons",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/toggle-particle-icons",
 			"default": "F4"
 		},
 		"toggle-editor-hitboxes": {
@@ -528,7 +480,6 @@
 			"description": "Toggles hitboxes in the editor",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/toggle-editor-hitboxes",
 			"default": "F5"
 		},
 		"toggle-hide-invisible": {
@@ -536,7 +487,6 @@
 			"description": "Toggles visibility of hidden objects",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/toggle-hide-invisible",
 			"default": "F6"
 		},
 		"toggle-link-controls": {
@@ -565,7 +515,6 @@
 			"description": "Move Selected Object(s) Left 1 Block (30 Units)",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/move-obj-left",
 			"default": "A"
 		},
 		"move-obj-right": {
@@ -573,7 +522,6 @@
 			"description": "Move Selected Object(s) Right 1 Block (30 Units)",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/move-obj-right",
 			"default": "D"
 		},
 		"move-obj-up": {
@@ -581,7 +529,6 @@
 			"description": "Move Selected Object(s) Up 1 Block (30 Units)",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/move-obj-up",
 			"default": "W"
 		},
 		"move-obj-down": {
@@ -589,7 +536,6 @@
 			"description": "Move Selected Object(s) Down 1 Block (30 Units)",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/move-obj-down",
 			"default": "S"
 		},
 		"move-obj-left-small": {
@@ -597,7 +543,6 @@
 			"description": "Move Selected Object(s) Left 2 Units",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/move-obj-left-small",
 			"default": "Shift+A"
 		},
 		"move-obj-right-small": {
@@ -605,7 +550,6 @@
 			"description": "Move Selected Object(s) Right 2 Units",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/move-obj-right-small",
 			"default": "Shift+D"
 		},
 		"move-obj-up-small": {
@@ -613,7 +557,6 @@
 			"description": "Move Selected Object(s) Up 2 Units",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/move-obj-up-small",
 			"default": "Shift+W"
 		},
 		"move-obj-down-small": {
@@ -621,7 +564,6 @@
 			"description": "Move Selected Object(s) Down 2 Units",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/move-obj-down-small",
 			"default": "Shift+S"
 		},
 		"save-editor-position-0": {
@@ -629,7 +571,6 @@
 			"description": "Save the current editor camera position in the slot <cj>0</c>. You can reload this slot back with <cy>Load Editor Position 0</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/save-editor-position-0",
 			"default": {
 				"win": "Ctrl+Zero",
 				"android": "Ctrl+Zero",
@@ -648,7 +589,6 @@
 			"description": "Load the current editor camera position in the slot <cj>0</c>. You can save this slot via <cy>Save Editor Position 0</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/load-editor-position-0",
 			"default": "Alt+Zero"
 		},
 		"save-editor-position-1": {
@@ -656,7 +596,6 @@
 			"description": "Save the current editor camera position in the slot <cj>1</c>. You can reload this slot back with <cy>Load Editor Position 1</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/save-editor-position-1",
 			"default": {
 				"win": "Ctrl+One",
 				"android": "Ctrl+One",
@@ -675,7 +614,6 @@
 			"description": "Load the current editor camera position in the slot <cj>1</c>. You can save this slot via <cy>Save Editor Position 1</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/load-editor-position-1",
 			"default": "Alt+One"
 		},
 		"save-editor-position-2": {
@@ -683,7 +621,6 @@
 			"description": "Save the current editor camera position in the slot <cj>2</c>. You can reload this slot back with <cy>Load Editor Position 2</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/save-editor-position-2",
 			"default": {
 				"win": "Ctrl+Two",
 				"android": "Ctrl+Two",
@@ -702,7 +639,6 @@
 			"description": "Load the current editor camera position in the slot <cj>2</c>. You can save this slot via <cy>Save Editor Position 2</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/load-editor-position-2",
 			"default": "Alt+Two"
 		},
 		"save-editor-position-3": {
@@ -710,7 +646,6 @@
 			"description": "Save the current editor camera position in the slot <cj>3</c>. You can reload this slot back with <cy>Load Editor Position 3</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/save-editor-position-3",
 			"default": {
 				"win": "Ctrl+Three",
 				"android": "Ctrl+Three",
@@ -729,7 +664,6 @@
 			"description": "Load the current editor camera position in the slot <cj>3</c>. You can save this slot via <cy>Save Editor Position 3</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/load-editor-position-3",
 			"default": "Alt+Three"
 		},
 		"save-editor-position-4": {
@@ -737,7 +671,6 @@
 			"description": "Save the current editor camera position in the slot <cj>4</c>. You can reload this slot back with <cy>Load Editor Position 4</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/save-editor-position-4",
 			"default": {
 				"win": "Ctrl+Four",
 				"android": "Ctrl+Four",
@@ -756,7 +689,6 @@
 			"description": "Load the current editor camera position in the slot <cj>4</c>. You can save this slot via <cy>Save Editor Position 4</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/load-editor-position-4",
 			"default": "Alt+Four"
 		},
 		"save-editor-position-5": {
@@ -764,7 +696,6 @@
 			"description": "Save the current editor camera position in the slot <cj>5</c>. You can reload this slot back with <cy>Load Editor Position 5</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/save-editor-position-5",
 			"default": {
 				"win": "Ctrl+Five",
 				"android": "Ctrl+Five",
@@ -783,7 +714,6 @@
 			"description": "Load the current editor camera position in the slot <cj>5</c>. You can save this slot via <cy>Save Editor Position 5</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/load-editor-position-5",
 			"default": "Alt+Five"
 		},
 		"save-editor-position-6": {
@@ -791,7 +721,6 @@
 			"description": "Save the current editor camera position in the slot <cj>6</c>. You can reload this slot back with <cy>Load Editor Position 6</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/save-editor-position-6",
 			"default": {
 				"win": "Ctrl+Six",
 				"android": "Ctrl+Six",
@@ -810,7 +739,6 @@
 			"description": "Load the current editor camera position in the slot <cj>6</c>. You can save this slot via <cy>Save Editor Position 6</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/load-editor-position-6",
 			"default": "Alt+Six"
 		},
 		"save-editor-position-7": {
@@ -818,7 +746,6 @@
 			"description": "Save the current editor camera position in the slot <cj>7</c>. You can reload this slot back with <cy>Load Editor Position 7</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/save-editor-position-7",
 			"default": {
 				"win": "Ctrl+Seven",
 				"android": "Ctrl+Seven",
@@ -837,7 +764,6 @@
 			"description": "Load the current editor camera position in the slot <cj>7</c>. You can save this slot via <cy>Save Editor Position 7</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/load-editor-position-7",
 			"default": "Alt+Seven"
 		},
 		"save-editor-position-8": {
@@ -845,7 +771,6 @@
 			"description": "Save the current editor camera position in the slot <cj>8</c>. You can reload this slot back with <cy>Load Editor Position 8</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/save-editor-position-8",
 			"default": {
 				"win": "Ctrl+Eight",
 				"android": "Ctrl+Eight",
@@ -864,7 +789,6 @@
 			"description": "Load the current editor camera position in the slot <cj>8</c>. You can save this slot via <cy>Save Editor Position 8</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/load-editor-position-8",
 			"default": "Alt+Eight"
 		},
 		"save-editor-position-9": {
@@ -872,7 +796,6 @@
 			"description": "Save the current editor camera position in the slot <cj>9</c>. You can reload this slot back with <cy>Load Editor Position 9</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/save-editor-position-9",
 			"default": {
 				"win": "Ctrl+Nine",
 				"android": "Ctrl+Nine",
@@ -891,7 +814,6 @@
 			"description": "Load the current editor camera position in the slot <cj>9</c>. You can save this slot via <cy>Save Editor Position 9</c>",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/load-editor-position-9",
 			"default": "Alt+Nine"
 		},
 		"pan-editor": {
@@ -899,7 +821,6 @@
 			"description": "Allows you to pan in the editor if you have swipe enabled",
 			"type": "keybind",
 			"category": "editor",
-			"migrate-from": "robtop.geometry-dash/pan-editor",
 			"default": "Space"
 		}
 	}
