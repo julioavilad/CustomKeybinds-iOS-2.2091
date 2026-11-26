@@ -282,7 +282,7 @@ struct $modify(EditorUI) {
 
         auto handlers = CCKeyboardDispatcher::get()->m_pHandlers;
         if (handlers) {
-            if (auto handler = typeinfo_cast<CCKeyboardHandler*>(handlers->lastObject())) {
+            if (auto handler = static_cast<CCKeyboardHandler*>(handlers->lastObject())) {
                 return static_cast<CCKeyboardDelegate*>(this) == handler->getDelegate();
             }
         }
