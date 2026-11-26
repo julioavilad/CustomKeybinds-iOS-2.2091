@@ -7,6 +7,7 @@
 #include <Geode/modify/PauseLayer.hpp>
 #include <Geode/ui/SimpleAxisLayout.hpp>
 #include <Geode/utils/cocos.hpp>
+#include <Geode/utils/Keyboard.hpp>
 
 using namespace geode::prelude;
 
@@ -107,10 +108,6 @@ struct $modify(PauseLayer) {
 };
 
 struct $modify(UILayer) {
-    static void onModify(auto& self) {
-        (void)self.setHookPriority("UILayer::handleKeypress", Priority::Late);
-    }
-
     static inline int platformButton() {
         return 1;
     }
@@ -165,14 +162,11 @@ struct $modify(UILayer) {
 
         dispatcher->updateModifierKeys(shift, ctrl, alt, cmd);
 
-        allowKeyDownThrough = true;
         if (down) {
             this->keyDown(key, timestamp);
         } else {
             this->keyUp(key, timestamp);
         }
-        allowKeyDownThrough = false;
-
         dispatcher->updateModifierKeys(oShift, oCtrl, oAlt, oCmd);
 
         //disable quick keys to restore previous state
@@ -182,6 +176,33 @@ struct $modify(UILayer) {
     bool init(GJBaseGameLayer* layer) {
         if (!UILayer::init(layer))
             return false;
+
+        // Geode 6 dispatches physical keyboard input through this event before
+        // forwarding it to the Cocos2d keyboard dispatcher. Run after Geode's
+        // keybind listener so configured binds can consume their events first.
+        this->addEventListener(
+            KeyboardInputEvent(),
+            [this](KeyboardInputData& data) {
+                if (data.key == enumKeyCodes::KEY_Escape) {
+                    return ListenerResult::Propagate;
+                }
+
+                auto handlers = CCKeyboardDispatcher::get()->m_pHandlers;
+                if (!handlers) {
+                    return ListenerResult::Propagate;
+                }
+
+                auto handler = typeinfo_cast<CCKeyboardHandler*>(handlers->lastObject());
+                if (!handler || handler->getDelegate() != this) {
+                    return ListenerResult::Propagate;
+                }
+
+                // Preserve the old handleKeypress behavior: swallow ordinary
+                // game input unless a Custom Keybind handled it first.
+                return ListenerResult::Stop;
+            },
+            1000
+        );
 
         // delay by a single frame
         geode::Loader::get()->queueInMainThread([this, self = Ref(this)] {
@@ -327,11 +348,4 @@ struct $modify(UILayer) {
         );
     }
 
-    static inline bool allowKeyDownThrough = false;
-    void handleKeypress(cocos2d::enumKeyCodes key, bool down, double timestamp) {
-        if (key == enumKeyCodes::KEY_Escape || allowKeyDownThrough) {
-            UILayer::handleKeypress(key, down, timestamp);
-            allowKeyDownThrough = false;
-        }
-    }
 };
