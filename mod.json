@@ -28,10 +28,7 @@
 			"migrate-from": "robtop.geometry-dash/jump-p1",
 			"default": [
 				"Space",
-				"W",
-				"Controller_A",
-				"Controller_Up",
-				"Controller_RB"
+				"W"
 			],
 			"priority": -2
 		},
@@ -42,9 +39,7 @@
 			"category": "gameplay",
 			"migrate-from": "robtop.geometry-dash/jump-p2",
 			"default": [
-				"Up",
-				"Controller_LB",
-				"Controller2_A"
+				"Up"
 			],
 			"priority": -2
 		},
@@ -55,9 +50,7 @@
 			"category": "gameplay",
 			"migrate-from": "robtop.geometry-dash/move-left-p1",
 			"default": [
-				"A",
-				"Controller_Left",
-				"Controller_LTHUMBSTICK_LEFT"
+				"A"
 			],
 			"priority": -1
 		},
@@ -68,9 +61,7 @@
 			"category": "gameplay",
 			"migrate-from": "robtop.geometry-dash/move-right-p1",
 			"default": [
-				"D",
-				"Controller_Right",
-				"Controller_LTHUMBSTICK_RIGHT"
+				"D"
 			],
 			"priority": -1
 		},
@@ -81,9 +72,7 @@
 			"category": "gameplay",
 			"migrate-from": "robtop.geometry-dash/move-left-p2",
 			"default": [
-				"Left",
-				"Controller_RTHUMBSTICK_LEFT",
-				"Controller2_LTHUMBSTICK_LEFT"
+				"Left"
 			],
 			"priority": -1
 		},
@@ -94,9 +83,7 @@
 			"category": "gameplay",
 			"migrate-from": "robtop.geometry-dash/move-right-p2",
 			"default": [
-				"Right",
-				"Controller_RTHUMBSTICK_RIGHT",
-				"Controller2_LTHUMBSTICK_RIGHT"
+				"Right"
 			],
 			"priority": -1
 		},
@@ -107,8 +94,7 @@
 			"category": "gameplay",
 			"migrate-from": "robtop.geometry-dash/place-checkpoint",
 			"default": [
-				"Z",
-				"Controller_X"
+				"Z"
 			]
 		},
 		"delete-checkpoint": {
@@ -118,8 +104,7 @@
 			"category": "gameplay",
 			"migrate-from": "robtop.geometry-dash/delete-checkpoint",
 			"default": [
-				"X",
-				"Controller_B"
+				"X"
 			]
 		},
 		"pause-level": {
@@ -128,10 +113,7 @@
 			"type": "keybind",
 			"category": "gameplay",
 			"migrate-from": "robtop.geometry-dash/pause-level",
-			"default": [
-				"Controller_Start",
-				"Controller2_Start"
-			]
+			"default": []
 		},
 		"toggle-hitboxes": {
 			"name": "Toggle hitboxes",
@@ -174,7 +156,7 @@
 			"type": "keybind",
 			"category": "gameplay",
 			"migrate-from": "robtop.geometry-dash/practice-level",
-			"default": "Controller_X"
+			"default": []
 		},
 		"unpause-level": {
 			"name": "Unpause Level",
@@ -183,8 +165,7 @@
 			"category": "gameplay",
 			"migrate-from": "robtop.geometry-dash/unpause-level",
 			"default": [
-				"Space",
-				"Controller_Start"
+				"Space"
 			]
 		},
 		"exit-level": {
@@ -193,7 +174,7 @@
 			"type": "keybind",
 			"category": "gameplay",
 			"migrate-from": "robtop.geometry-dash/exit-level",
-			"default": "Controller_B"
+			"default": []
 		},
 		"editor-title": {
 			"name": "Editor",
@@ -428,8 +409,7 @@
 			"category": "editor",
 			"migrate-from": "robtop.geometry-dash/playtest",
 			"default": [
-				"Enter",
-				"Controller_Start"
+				"Enter"
 			]
 		},
 		"playback-music": {
